@@ -6,8 +6,9 @@ Built with TypeScript following [MCP TypeScript SDK](https://github.com/modelcon
 
 ## Prerequisites
 
-- Node.js >= 20.0.0
-- pnpm >= 9.0.0 ([Installation Guide](https://pnpm.io/installation))
+- Node.js >= 22.17.0
+- pnpm >= 10.0.0 ([Installation Guide](https://pnpm.io/installation))
+- TypeScript >= 5.0.0
 
 ## Quick Setup
 

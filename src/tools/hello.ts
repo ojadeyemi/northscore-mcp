@@ -14,7 +14,7 @@ export function registerHelloTool(server: McpServer): void {
         message: z.string(),
       },
     },
-    async ({ name }) => {
+    ({ name }) => {
       const greeting = name ? `Hello, ${name}!` : 'Hello, World!';
       const output = { message: greeting };
 
