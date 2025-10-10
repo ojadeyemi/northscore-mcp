@@ -4,6 +4,17 @@ MCP (Model Context Protocol) server for NorthScore.
 
 Built with TypeScript following [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) and [OpenAI Apps SDK](https://developers.openai.com/apps-sdk) standards.
 
+## Documentation
+
+To understand how to go about researching how to make an MCP server that's compatible with or the ChatGPT Apps SDK, please refer to the documentation in the `docs` folder.
+
+- [Concepts](./docs/concepts.md)
+- [Plan](./docs/plan.md)
+- [Build](./docs/build.md)
+- [Deploy](./docs/deploy.md)
+- [Guides](./docs/guides.md)
+- [NorthScore MCP Tools](./docs/northscore-mcp-tools.md)
+
 ## Prerequisites
 
 - Node.js >= 22.17.0
