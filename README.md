@@ -14,12 +14,15 @@ To understand how to go about researching how to make an MCP server that's compa
 - [Deploy](./docs/deploy.md)
 - [Guides](./docs/guides.md)
 - [NorthScore MCP Tools](./docs/northscore-mcp-tools.md)
+- [Building a Standalone In-App Assistant](./docs/in-app-assistant.md)
 
 ## Prerequisites
 
 - Node.js >= 22.17.0
-- pnpm >= 10.0.0 ([Installation Guide](https://pnpm.io/installation))
+- **pnpm** >= 10.0.0 ([Installation Guide](https://pnpm.io/installation))
 - TypeScript >= 5.0.0
+
+This project uses `pnpm` as the package manager.
 
 ## Quick Setup
 
