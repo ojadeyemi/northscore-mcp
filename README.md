@@ -1,19 +1,26 @@
-# NorthScore MCP Server
+# Northscore MCP Server
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Status](https://img.shields.io/badge/status-in%20development-orange)
 
-MCP (Model Context Protocol) server for NorthScore.
+MCP (Model Context Protocol) server for [**Northscore**](https://www.northscore.ca).
+
 
 Built with TypeScript following [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) and [OpenAI Apps SDK](https://developers.openai.com/apps-sdk) standards.
 
+## Overview
+
+The NorthScore MCP Server is designed to enable AI agents to query NorthScore's sports data securely. 
+
 ## Documentation
 
-To understand how to go about researching how to make an MCP server that's compatible with or the ChatGPT Apps SDK, please refer to the documentation in the `docs` folder.
+To understand how to go about researching how to make an MCP server that's compatible with the ChatGPT Apps SDK, AgentKit and ChatKit, please refer to the documentation in the `docs` folder.
 
 - [Concepts](./docs/concepts.md)
 - [Plan](./docs/plan.md)
 - [Build](./docs/build.md)
 - [Deploy](./docs/deploy.md)
 - [Guides](./docs/guides.md)
-- [NorthScore MCP Tools](./docs/northscore-mcp-tools.md)
+- [Northscore MCP Tools](./docs/northscore-mcp-tools.md)
 - [Building a Standalone In-App Assistant](./docs/in-app-assistant.md)
 
 ## Prerequisites
@@ -36,7 +43,7 @@ This project uses `pnpm` as the package manager.
    cp .env.example .env
    ```
 
-   Edit `.env` and add your NorthScore API key:
+   Edit `.env` and add your Northscore API key:
    ```env
    NORTHSCORE_STATS_API_KEY=your_api_key_here
    ```
@@ -45,10 +52,6 @@ This project uses `pnpm` as the package manager.
    ```bash
    pnpm dev
    ```
-
-## Available Tools
-
-- **`get_games`** - Fetch games and schedules from Canadian sports leagues (CEBL, CHL, CFL, CPL, Hoop Queens, U SPORTS)
 
 ## Development
 
@@ -61,13 +64,6 @@ pnpm lint         # Run ESLint
 pnpm format       # Format code with Prettier
 ```
 
-## TODO
-
-Future tools to implement:
-- [ ] Standings
-- [ ] Leaderboards
-- [ ] Team stats
-- [ ] Team vs team comparisons
 
 ## References
 
