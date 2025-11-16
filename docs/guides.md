@@ -1,6 +1,6 @@
 # Guides
 
-This document provides guides for using and maintaining the NorthScore MCP server.
+This document provides guides for using and maintaining the Northscore MCP server.
 
 ## Optimize Metadata
 
@@ -14,9 +14,9 @@ ChatGPT decides when to call your connector based on the metadata you provide. W
 
 Before you tune metadata, assemble a labelled dataset:
 
-*   **Direct prompts** – users explicitly name your product or data source.
-*   **Indirect prompts** – users describe the outcome they want without naming your tool.
-*   **Negative prompts** – cases where built-in tools or other connectors should handle the request.
+- **Direct prompts** – users explicitly name your product or data source.
+- **Indirect prompts** – users describe the outcome they want without naming your tool.
+- **Negative prompts** – cases where built-in tools or other connectors should handle the request.
 
 Document the expected behaviour for each prompt (call your tool, do nothing, or use an alternative). You will reuse this set during regression testing.
 
@@ -26,9 +26,9 @@ Document the expected behaviour for each prompt (call your tool, do nothing, or 
 
 Apps SDK gives your code access to user data, third-party APIs, and write actions. Treat every connector as production software:
 
-*   **Least privilege** – only request the scopes, storage access, and network permissions you need.
-*   **Explicit user consent** – make sure users understand when they are linking accounts or granting write access. Lean on ChatGPT’s confirmation prompts for potentially destructive actions.
-*   **Defense in depth** – assume prompt injection and malicious inputs will reach your server. Validate everything and keep audit logs.
+- **Least privilege** – only request the scopes, storage access, and network permissions you need.
+- **Explicit user consent** – make sure users understand when they are linking accounts or granting write access. Lean on ChatGPT’s confirmation prompts for potentially destructive actions.
+- **Defense in depth** – assume prompt injection and malicious inputs will reach your server. Validate everything and keep audit logs.
 
 ## Troubleshooting
 

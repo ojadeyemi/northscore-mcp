@@ -10,13 +10,18 @@
     "start": "node dist/index.js",
     "type-check": "tsc --noEmit",
     "lint": "eslint src",
-    "format": "prettier --write src"
+    "format": "prettier --write src",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "tsx tests/integration/api.test.ts"
   },
   "keywords": [
     "mcp",
     "server"
   ],
-  "author": "",
+  "author": "OJ Adeyemi",
   "license": "ISC",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
@@ -27,10 +32,12 @@
     "@eslint/js": "^9.37.0",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.5",
+    "@vitest/ui": "^4.0.9",
     "eslint": "^9.37.0",
     "prettier": "^3.6.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.46.0"
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^4.0.9"
   }
 }

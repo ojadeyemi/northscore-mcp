@@ -1,15 +1,16 @@
 # Northscore MCP Server
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
+<a href="https://modelcontextprotocol.io/clients" target="_blank"><img src="https://badge.mcpx.dev/?type=server" /></a>
 
 MCP (Model Context Protocol) server for [**Northscore**](https://www.northscore.ca).
-
 
 Built with TypeScript following [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) and [OpenAI Apps SDK](https://developers.openai.com/apps-sdk) standards.
 
 ## Overview
 
-The NorthScore MCP Server is designed to enable AI agents to query NorthScore's sports data securely. 
+The Northscore MCP Server is designed to enable AI agents to query Northscore's sports data securely.
 
 ## Documentation
 
@@ -34,16 +35,19 @@ This project uses `pnpm` as the package manager.
 ## Quick Setup
 
 1. **Install dependencies:**
+
    ```bash
    pnpm install
    ```
 
 2. **Configure environment:**
+
    ```bash
    cp .env.example .env
    ```
 
    Edit `.env` and add your Northscore API key:
+
    ```env
    NORTHSCORE_STATS_API_KEY=your_api_key_here
    ```
@@ -63,7 +67,6 @@ pnpm type-check   # Type checking
 pnpm lint         # Run ESLint
 pnpm format       # Format code with Prettier
 ```
-
 
 ## References
 

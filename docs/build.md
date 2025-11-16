@@ -1,6 +1,6 @@
 # Build
 
-This document describes the process of building the NorthScore MCP server.
+This document describes the process of building the Northscore MCP server.
 
 ## Set up your server
 
@@ -10,7 +10,7 @@ Your MCP server is the foundation of every Apps SDK integration. It exposes tool
 
 Apps SDK supports any server that implements the MCP specification, but the official TypeScript SDK is the fastest way to get started.
 
-*   **TypeScript SDK (official)** – ideal if your stack is already Node/React. Use `@modelcontextprotocol/sdk`. Docs: [modelcontextprotocol.io](https://modelcontextprotocol.io/).
+- **TypeScript SDK (official)** – ideal if your stack is already Node/React. Use `@modelcontextprotocol/sdk`. Docs: [modelcontextprotocol.io](https://modelcontextprotocol.io/).
 
 Install the SDK and any web framework you prefer (Express is a common choice).
 

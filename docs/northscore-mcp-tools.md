@@ -1,6 +1,6 @@
-# NorthScore MCP Tools
+# Northscore MCP Tools
 
-This document provides details about the NorthScore MCP tools.
+This document provides details about the Northscore MCP tools.
 
 ## `get_games`
 
@@ -28,7 +28,7 @@ Develop the leaderboard tool to return the top 5 performers for a specific stat.
 
 ## `get_teamstats`
 
-Here we want a simple response of a team stat to be able to generate a team card (so like team name, primary and secondary colours, url to team page on NorthScore app, and then 4-5 stats related to the team). Let's finalize a generic schema that will work for every league in every sport for simplicity and consistency.
+Here we want a simple response of a team stat to be able to generate a team card (so like team name, primary and secondary colours, url to team page on Northscore app, and then 4-5 stats related to the team). Let's finalize a generic schema that will work for every league in every sport for simplicity and consistency.
 
 **Behavior / UI:** Inline card with logo, record, and stats like average points, and recent form (e.g., W-L-W). No player stats.
 

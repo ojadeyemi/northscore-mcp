@@ -1,6 +1,6 @@
 # Deploy
 
-This document explains how to deploy the NorthScore MCP server.
+This document explains how to deploy the Northscore MCP server.
 
 ## Deploy your app
 
@@ -10,9 +10,9 @@ Once you have a working MCP server and component bundle, host them behind a stab
 
 Deployment platforms that work well with Apps SDK include:
 
-*   **Managed containers** – Fly.io, Render, or Railway for quick spin-up and automatic TLS.
-*   **Cloud serverless** – Google Cloud Run or Azure Container Apps if you need scale-to-zero, keeping in mind that long cold starts can interrupt streaming HTTP.
-*   **Kubernetes** – for teams that already run clusters. Front your pods with an ingress controller that supports server-sent events.
+- **Managed containers** – Fly.io, Render, or Railway for quick spin-up and automatic TLS.
+- **Cloud serverless** – Google Cloud Run or Azure Container Apps if you need scale-to-zero, keeping in mind that long cold starts can interrupt streaming HTTP.
+- **Kubernetes** – for teams that already run clusters. Front your pods with an ingress controller that supports server-sent events.
 
 Regardless of platform, make sure `/mcp` stays responsive, supports streaming responses, and returns appropriate HTTP status codes for errors.
 
@@ -48,9 +48,9 @@ Once developer mode is active you will see a Create button under Settings → Co
 1.  Ensure your MCP server is reachable over HTTPS (for local development, expose it via ngrok).
 2.  In ChatGPT, navigate to Settings → Connectors → Create.
 3.  Provide the metadata for your connector:
-    *   **Connector name** – a user-facing title such as Kanban board.
-    *   **Description** – explain what the connector does and when to use it. The model uses this text during discovery.
-    *   **Connector URL** – the public /mcp endpoint of your server (for example https://abc123.ngrok.app/mcp).
+    - **Connector name** – a user-facing title such as Kanban board.
+    - **Description** – explain what the connector does and when to use it. The model uses this text during discovery.
+    - **Connector URL** – the public /mcp endpoint of your server (for example https://abc123.ngrok.app/mcp).
 4.  Click Create. If the connection succeeds you will see a list of the tools your server advertises. If it fails, use the [Testing](https://developers.openai.com/apps-sdk/deploy/testing) guide to debug with MCP Inspector or the API Playground.
 
 ## Test your integration
@@ -59,9 +59,9 @@ Testing validates that your connector behaves predictably before you expose it t
 
 ### Unit test your tool handlers
 
-*   Exercise each tool function directly with representative inputs. Verify schema validation, error handling, and edge cases (empty results, missing IDs).
-*   Include automated tests for authentication flows if you issue tokens or require linking.
-*   Keep test fixtures close to your MCP code so they stay up to date as schemas evolve.
+- Exercise each tool function directly with representative inputs. Verify schema validation, error handling, and edge cases (empty results, missing IDs).
+- Include automated tests for authentication flows if you issue tokens or require linking.
+- Keep test fixtures close to your MCP code so they stay up to date as schemas evolve.
 
 ### Use MCP Inspector during development
 

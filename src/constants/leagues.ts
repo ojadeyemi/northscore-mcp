@@ -1,0 +1,25 @@
+import type { LeagueSystem } from '../types/leagues.js';
+
+export const LEAGUE_SYSTEMS = [
+  'cebl',
+  'cfl',
+  'cpl',
+  'hoopqueens',
+  'chl_ohl',
+  'chl_whl',
+  'chl_qjmhl',
+  'usports_mbb',
+  'usports_wbb',
+  'usports_mvb',
+  'usports_wvb',
+  'usports_mfb',
+  'usports_msoc',
+  'usports_wsoc',
+  'usports_mhky',
+  'usports_whky',
+  'ocaa_mbb',
+  'ocaa_wbb',
+  'ocaa_msoc',
+  'ocaa_wsoc',
+  'ocaa_wvb',
+] as unknown as [LeagueSystem, ...LeagueSystem[]];

@@ -97,6 +97,94 @@ export interface GenericGame {
 }
 
 /**
+ * Player profile information
+ */
+export interface PlayerProfile {
+  height?: string;
+  weight?: string;
+  date_of_birth?: string;
+  nationality?: string;
+  jersey_number?: string | number;
+  position?: string;
+  bio?: string;
+  photo_url?: string;
+  games_started?: number;
+  games_played?: number;
+  college?: string;
+}
+
+/**
+ * Team standings information
+ */
+export interface GenericStandings {
+  team_id: string | number;
+  team_name: string;
+  short_team_name?: string;
+  team_abbreviation?: string;
+  wins: number;
+  losses: number;
+  rank: number;
+  league_id: string;
+  division?: string;
+  additional_stats: Record<string, number | string>;
+}
+
+/**
+ * Player leaderboard entry
+ */
+export interface GenericPlayerLeaderboard {
+  player_id: string | number;
+  player_name: string;
+  value: string;
+  rank: number;
+  league_id: string;
+  stat_type: string;
+  team_name?: string;
+  short_team_name?: string;
+  team_id?: string | number;
+  team_abbreviation?: string;
+  player_profile: PlayerProfile;
+}
+
+/**
+ * Team statistics
+ */
+export interface GenericTeamStat {
+  team_id: string | number;
+  team_name: string;
+  short_team_name?: string;
+  team_abbreviation?: string;
+  league_id: string;
+  games_played?: number;
+  stats: Record<string, number | string>;
+  rankings?: Record<string, number>;
+  wins?: number;
+  losses?: number;
+  ties?: number;
+  division?: string;
+  rank?: number;
+  streak?: string;
+}
+
+/**
+ * Team information
+ */
+export interface GenericTeamInfo {
+  team_id: string | number;
+  team_name: string;
+  wins: number;
+  losses: number;
+  short_team_name?: string;
+  team_abbreviation?: string;
+  league_id: string;
+  division?: string;
+  rank?: number;
+  streak?: string;
+  tickets_url?: string;
+  additional_info?: Record<string, number | string>;
+}
+
+/**
  * API error response structure
  */
 export interface NorthScoreApiError {

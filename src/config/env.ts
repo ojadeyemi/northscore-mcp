@@ -1,5 +1,5 @@
 /**
- * Environment configuration for NorthScore MCP Server
+ * Environment configuration for Northscore MCP Server
  */
 
 interface Config {
@@ -18,7 +18,7 @@ function getEnvVar(key: string, defaultValue?: string): string {
 
 export const config: Config = {
   northScoreApiKey: getEnvVar('NORTHSCORE_STATS_API_KEY'),
-  port: parseInt(getEnvVar('PORT', '3000'), 10),
+  port: parseInt(getEnvVar('PORT', '3002'), 10),
   nodeEnv: getEnvVar('NODE_ENV', 'development'),
 };
 
